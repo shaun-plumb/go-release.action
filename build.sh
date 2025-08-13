@@ -16,7 +16,7 @@ if [ -x "./build.sh" ]; then
   OUTPUT=`./build.sh "${CMD_PATH}"`
 else
   go build -v -ldflags="-X 'github.com/shaun-plumb/helloworld/internal/version.Version=${RELEASE_NAME}'" ./...
-  OUTPUT="${PROJECT_NAME}${EXT} ${RELEASE_NAME{"
+  OUTPUT="${PROJECT_NAME}${EXT} ${RELEASE_NAME}"
 fi
 
 echo ${OUTPUT}
