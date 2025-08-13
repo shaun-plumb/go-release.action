@@ -12,10 +12,6 @@ go get -v ./...
 
 EXT=''
 
-if [ '$GOOS' == 'windows' ]; then
-EXT='.exe'
-fi
-
 if [ -x "./build.sh" ]; then
   OUTPUT=`./build.sh "${CMD_PATH}"`
 else
