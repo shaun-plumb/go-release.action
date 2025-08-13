@@ -12,7 +12,7 @@ go get -v ./...
 
 EXT=''
 
-if [ $GOOS == 'windows' ]; then
+if [ '$GOOS' == 'windows' ]; then
 EXT='.exe'
 fi
 
